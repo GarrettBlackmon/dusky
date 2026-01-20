@@ -1,0 +1,59 @@
+#!/bin/sh
+# Universal Wayland Session Manager (UWSM) - Hyprland Specifics
+# These variables override global settings specifically for Hyprland sessions.
+
+# -----------------------------------------------------------------------------
+# 1. SESSION IDENTIFICATION
+# -----------------------------------------------------------------------------
+export DESKTOP_SESSION=hyprland-uwsm
+
+# UWSM automatically handles:
+# XDG_CURRENT_DESKTOP, XDG_SESSION_TYPE, XDG_SESSION_DESKTOP
+
+# -----------------------------------------------------------------------------
+# 2. HYPRLAND VISUALS
+# -----------------------------------------------------------------------------
+# Cursor size specifically for Hyprland's internal rendering
+export HYPRCURSOR_SIZE=18
+
+# -----------------------------------------------------------------------------
+# 3. RENDERING ENGINE (AQUAMARINE)
+# -----------------------------------------------------------------------------
+# Hyprland v0.42+ uses Aquamarine (AQ) instead of WLROOTS.
+
+# !!! CRITICAL GPU SELECTION !!!
+# Desktop with dual NVIDIA GPUs + VFIO passthrough:
+# - T400 (0a:00.0, card2): Display output (physically connected monitor)
+# - RTX 5090 (01:00.0, card1): Render offload + VM passthrough (dynamic binding)
+#
+# DON'T set AQ_DRM_DEVICES or WLR_DRM_DEVICES - let Aquamarine auto-detect.
+# It will use the T400 automatically since that's where the monitor is connected.
+# This allows the 5090 to be dynamically bound/unbound for VM passthrough.
+#
+# When 5090 is attached to host:
+#   - Aquamarine scans out via T400 (monitor is here)
+#   - Applications can render on 5090 (offload)
+# When 5090 is detached for VM:
+#   - Everything falls back to T400
+#   - VM can use 5090
+#   - Looking Glass works in a window
+
+# These variables enable render offload for applications when 5090 is available
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export __VK_LAYER_NV_optimus=NVIDIA_only
+
+# -----------------------------------------------------------------------------
+# 4. PATH & UTILITIES
+# -----------------------------------------------------------------------------
+# Organized to prevent duplicates.
+# Priority: Local Bin -> Cargo Bin -> System Path
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
+# -----------------------------------------------------------------------------
+# 5. TERMINAL OVERRIDE
+# -----------------------------------------------------------------------------
+# While 'env' sets kitty, Hyprland prefers xdg-terminal-exec for standard integration.
+export TERMINAL=xdg-terminal-exec

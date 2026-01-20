@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=3DMark Demo
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/231350
+Icon=steam_icon_231350
+Terminal=false
+Type=Application
+Categories=Game;

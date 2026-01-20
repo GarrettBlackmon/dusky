@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ChatGPT
+Comment=ChatGPT Web App
+Exec=chromium --app=https://chatgpt.com
+Icon=chromium
+Terminal=false
+Type=Application
+Categories=AI;Utility;
