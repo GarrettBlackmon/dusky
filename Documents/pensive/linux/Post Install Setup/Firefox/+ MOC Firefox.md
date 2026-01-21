@@ -91,10 +91,10 @@ Enabling hardware acceleration offloads video decoding from the CPU to the GPU, 
 
 Use the search bar at the top of the `about:config` page to find and modify the following preferences. You can double-click a preference to toggle its value between `true` and `false`.
 
-| Preference Name | Recommended Value | Description |
-| :--- | :--- | :--- |
-| `gfx.webrender.all` | `true` | Enables the high-performance WebRender rendering engine for all system configurations, which is beneficial for overall browser performance and works well with hardware acceleration. |
-| `media.hardware-video-decoding.force-enabled` | `true` | **(Last Resort)** Forces hardware decoding to be active even if Firefox's internal checks fail. Use this only if the other settings don't work. |
+| Preference Name                               | Recommended Value | Description                                                                                                                                                                           |
+| :-------------------------------------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `gfx.webrender.all`                           | `true`            | Enables the high-performance WebRender rendering engine for all system configurations, which is beneficial for overall browser performance and works well with hardware acceleration. |
+| `media.hardware-video-decoding.force-enabled` | `true`            | **(Last Resort)** Forces hardware decoding to be active even if Firefox's internal checks fail. Use this only if the other settings don't work.                                       |
 
 > [!WARNING] Forcing Can Cause Instability
 > The `media.hardware-video-decoding.force-enabled` option overrides Firefox's compatibility checks. While it can solve issues on some systems, it may lead to graphical glitches, crashes, or black video screens on others. Enable it only as a final troubleshooting step.

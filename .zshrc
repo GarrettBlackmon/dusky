@@ -506,3 +506,11 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 alias indago='python /home/garrett/Indago/scripts/indago.py'
 source /usr/share/nvm/init-nvm.sh
+
+
+# Automatically start Hyprland on TTY1
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+  if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+  fi
+fi

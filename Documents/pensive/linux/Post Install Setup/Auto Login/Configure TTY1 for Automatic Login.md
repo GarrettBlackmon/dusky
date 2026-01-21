@@ -30,11 +30,11 @@ ExecStart=-/usr/bin/agetty --autologin YOUR_USERNAME --noclear --noissue %I $TER
 
 #### Configuration Breakdown
 
-| Parameter | Description |
-| :--- | :--- |
-| `[Service]` | Specifies that the following directives apply to the service configuration. |
-| `ExecStart=` | The first, empty `ExecStart` clears the default command defined in the original service file. |
-| `ExecStart=-...` | The second `ExecStart` defines our new command. The `-` prefix tells `systemd` not to mark the unit as failed if the process exits with an error. |
-| `--autologin YOUR_USERNAME` | This is the key flag that performs the automatic login for the specified user. |
-| `--noclear` | Prevents `agetty` from clearing the screen before showing the login prompt, which can preserve boot messages. |
-| `--noissue` | Prevents `agetty` from displaying the contents of `/etc/issue` before the login. |
+| Parameter                   | Description                                                                                                                                       |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `[Service]`                 | Specifies that the following directives apply to the service configuration.                                                                       |
+| `ExecStart=`                | The first, empty `ExecStart` clears the default command defined in the original service file.                                                     |
+| `ExecStart=-...`            | The second `ExecStart` defines our new command. The `-` prefix tells `systemd` not to mark the unit as failed if the process exits with an error. |
+| `--autologin YOUR_USERNAME` | This is the key flag that performs the automatic login for the specified user.                                                                    |
+| `--noclear`                 | Prevents `agetty` from clearing the screen before showing the login prompt, which can preserve boot messages.                                     |
+| `--noissue`                 | Prevents `agetty` from displaying the contents of `/etc/issue` before the login.                                                                  |

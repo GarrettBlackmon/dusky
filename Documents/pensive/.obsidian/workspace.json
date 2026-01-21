@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "b81bda7ded5c764d",
+    "type": "split",
+    "children": [
+      {
+        "id": "613e575d0a579a52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2e4876560206a39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Post Install Setup/+ Fresh Install/+ MOC Fresh Install To-Do List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "+ MOC Fresh Install To-Do List"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8572f0e090a53e1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "678766ec7dc464f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e865311b186fa7ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ae35de23a3e3400f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "update theme",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c034d12cd8c66be0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7592af4ec21a47e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "66154dc05dbb0a5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76ea89330a88c440",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "linux/Important Notes/KVM/Windows GPU Passthrough/Host PC  Preparation for GPU isolation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Host PC  Preparation for GPU isolation"
+            }
+          },
+          {
+            "id": "7e7ec1dba76096fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "linux/Important Notes/KVM/Windows GPU Passthrough/Host PC  Preparation for GPU isolation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Host PC  Preparation for GPU isolation"
+            }
+          },
+          {
+            "id": "23be5dee3cafb485",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eb2e16ebb48f32ce",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ee6f697ca86a728e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "linux/Important Notes/KVM/Windows GPU Passthrough/Host PC  Preparation for GPU isolation.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Host PC  Preparation for GPU isolation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f2e4876560206a39",
+  "lastOpenFiles": [
+    "Garretts_custom_bs/GPU_DIAGNOSIS.md",
+    "Garretts_custom_bs/DENON_MIRROR_SETUP.md",
+    "Garretts_custom_bs/YOUTUBE_DJ_MODE.md",
+    "Garretts_custom_bs/GPU_SETUP_README.md",
+    "Garretts_custom_bs/GPU_QUICK_FIX.md",
+    "ai_prompt/Untitled.md",
+    "ai_prompt/SCRIPTS.md",
+    "ai_prompt/master prompt.md",
+    "ai_prompt/Command Tips.md",
+    "linux/Post Install Setup/Waydroid/Waydroid Setup.md",
+    "linux/Post Install Setup/Waydroid/+ MOC Waydroid.md",
+    "linux/Post Install Setup/TLP/TLP Latest 1.9.md",
+    "linux/Post Install Setup/TLP/+ MOC tlp config.md",
+    "linux/Post Install Setup/Ollama/+ MOC Ollama.md",
+    "linux/Post Install Setup/More +/Asusd Dbus Misconfiguration.md",
+    "linux/Post Install Setup/Hypr Plugins Manager/Toggling Hypr Plugins Manager.md",
+    "linux/Post Install Setup/Gnome/Right click open terminal.md",
+    "linux/Post Install Setup/Gnome/Gnome Apps opening Twice.md",
+    "linux/Post Install Setup/git/git_bare_repo_setup.md",
+    "linux/Post Install Setup/git/+ MOC git.md",
+    "linux/Post Install Setup/FTP/+ MOC FTP.md",
+    "linux/Post Install Setup/Firefox/+ MOC Firefox.md",
+    "linux/Post Install Setup/etc/Fonts/+ MOC Fonts.md",
+    "linux/Post Install Setup/Auto Login/Automatically Launch Hyprland from Zsh.md",
+    "linux/Post Install Setup/Auto Login/+ MOC Auto Login.md",
+    "linux/Post Install Setup/Auto Login/Configure TTY1 for Automatic Login.md",
+    "Untitled.canvas"
+  ]
+}
