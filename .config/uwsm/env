@@ -82,34 +82,34 @@ export CLUTTER_BACKEND=wayland
 # export LIBVA_DRIVER_NAME=iHD
 
 # ### HARDWARE: AMD ###
-# # AMD uses the Mesa radeonsi driver
-# # export LIBVA_DRIVER_NAME=radeonsi
+# AMD uses the Mesa radeonsi driver
+export LIBVA_DRIVER_NAME=radeonsi
 
 # ### HARDWARE: NVIDIA ###
 # # -------------------------------------------------
 # # Critical NVIDIA Drivers
-export LIBVA_DRIVER_NAME=nvidia
-export __GLX_VENDOR_LIBRARY_NAME=nvidia
+##  export LIBVA_DRIVER_NAME=nvidia
+## export __GLX_VENDOR_LIBRARY_NAME=nvidia
 #
 # # Firefox/Mozilla Hardware Acceleration Fixes
-export MOZ_DISABLE_RDD_SANDBOX=1
-export NVD_BACKEND=direct
+# export MOZ_DISABLE_RDD_SANDBOX=1  # NVIDIA only
+# export NVD_BACKEND=direct  # NVIDIA only
 #
 # # GBM Backend (Often auto-detected, but explicit setting helps some compositors)
-# export GBM_BACKEND=nvidia-drm
+##  export GBM_BACKEND=nvidia-drm
 #
 # # Vulkan Optimizations
-export __VK_LAYER_NV_optimus=NVIDIA_only
+## export __VK_LAYER_NV_optimus=NVIDIA_only
 #
 # # Adaptive Sync (VRR) - Set to 0 if games flicker
-export __GL_VRR_ALLOWED=0
+# export __GL_VRR_ALLOWED=0
 #
 # # Shader Cache (Reduces stuttering)
-export __GL_SHADER_DISK_CACHE=1
-export __GL_SHADER_DISK_CACHE_PATH=$HOME/.cache/nv/
+# export __GL_SHADER_DISK_CACHE=1
+# export __GL_SHADER_DISK_CACHE_PATH=$HOME/.cache/nv/
 #
-# # Cursor Hardware Fix (Uncomment if cursor disappears/glitches)
-export WLR_NO_HARDWARE_CURSORS=1
+# # Cursor Hardware Fix (NVIDIA ONLY - breaks AMD!)
+# export WLR_NO_HARDWARE_CURSORS=1
 # # -------------------------------------------------
 
 # -----------------------------------------------------------------------------
@@ -131,4 +131,4 @@ export LIBVIRT_DEFAULT_URI='qemu:///system'
 
 # Enables PRIME Render Offload, allowing you to run specific applications
 # on the NVIDIA GPU while the desktop session runs on the Intel iGPU.
-#export __NV_PRIME_RENDER_OFFLOAD=1
+## export __NV_PRIME_RENDER_OFFLOAD=1

@@ -195,9 +195,9 @@
     "cpu": {
         "format": " {usage}%",
         "interval": 2,
-        "on-click": "uwsm-app -- kitty --class htop -e htop",
+        "on-click": "uwsm-app -- mission-center",
         "on-click-right": "uwsm-app -- kitty --class sysbench_benchmark.sh -e $HOME/user_scripts/performance/sysbench_benchmark.sh",
-        "tooltip-format": "CPU Usage: {usage}%\nAvg Frequency: {avg_frequency} GHz\n\nLMB: htop\nRMB: sysbench",
+        "tooltip-format": "CPU Usage: {usage}%\nAvg Frequency: {avg_frequency} GHz\n\nLMB: Mission Control\nRMB: sysbench",
         "states": {
             "warning": 60,
             "critical": 80
@@ -208,8 +208,9 @@
         "format": "󰍛 {percentage}%",
         "format-alt": "󰍛 {used:0.1f}G",
         "interval": 3,
+        "on-click": "uwsm-app -- mission-center",
         "on-click-right": "uwsm-app -- kitty --class io_monitor.sh -e $HOME/user_scripts/drives/io_monitor.sh",
-        "tooltip-format": "RAM: {used:0.2f} GiB / {total:0.2f} GiB ({percentage}%)\nAvailable: {avail:0.2f} GiB\nSwap: {swapUsed:0.2f} GiB / {swapTotal:0.2f} GiB\n\nRMB: I/O Monitor",
+        "tooltip-format": "RAM: {used:0.2f} GiB / {total:0.2f} GiB ({percentage}%)\nAvailable: {avail:0.2f} GiB\nSwap: {swapUsed:0.2f} GiB / {swapTotal:0.2f} GiB\n\nLMB: Mission Control\nRMB: I/O Monitor",
         "states": {
             "warning": 70,
             "critical": 85
@@ -221,7 +222,8 @@
         "format-alt": "󰋊 {used}/{total}",
         "path": "/",
         "interval": 60,
-        "tooltip-format": "Disk Usage: {used}/{total} ({percentage_used}%)\nFree: {free}\nPath: {path}\n\nLMB: Toggle Format\nRMB: File Manager",
+        "on-click": "uwsm-app -- mission-center",
+        "tooltip-format": "Disk Usage: {used}/{total} ({percentage_used}%)\nFree: {free}\nPath: {path}\n\nLMB: Mission Control\nRMB: File Manager",
         "states": {
             "warning": 75,
             "critical": 90
