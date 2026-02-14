@@ -177,7 +177,7 @@ show_ai_menu() {
 
 show_utils_menu() {
     local choice
-    choice=$(menu "Utils" "󰖩  Wi-Fi (TUI)\n󰂯  Bluetooth\n󰕾  Audio Mixer\n󰞅  Emoji Picker\n  Screenshot (Swappy)\n󰅇  Clipboard Persistence\n󰉋  File Manager Switch\n󰍽  Mouse Handedness\n󰌌  Wayclick (Key Sounds)\n  YouTube DJ Mode")
+    choice=$(menu "Utils" "󰖩  Wi-Fi (TUI)\n󰂯  Bluetooth\n󰕾  Audio Mixer\n󰞅  Emoji Picker\n  Screenshot (Swappy)\n󰅇  Clipboard Persistence\n󰉋  File Manager Switch\n󰍽  Mouse Handedness\n󰌌  Wayclick (Key Sounds)\n  YouTube DJ Mode\n󰺷  RuneLite Account Switcher")
 
     case "${choice,,}" in
         *wi-fi*)       run_term "wifitui" wifitui ;;
@@ -194,6 +194,7 @@ show_utils_menu() {
         *mouse*)       run_term_hold "mouse_button_reverse.sh" "$SCRIPTS_DIR/desktop_apps/mouse_button_reverse.sh" ;;
         *wayclick*)    run_app "$SCRIPTS_DIR/wayclick/wayclick.sh" ;;
         *youtube*dj*)  run_app youtube-dj-toggle ;;
+        *runelite*)    run_app "$SCRIPTS_DIR/runelite/runelite_account_switcher.sh" ;;
         *)             show_main_menu ;;
     esac
 }

@@ -12,6 +12,7 @@
     "margin-left": -2,
     "margin-right": 0,
     "fixed-center": true,
+    "reload_style_on_change": true,
 
     // ===================================================================
     // MODULE ORDERING

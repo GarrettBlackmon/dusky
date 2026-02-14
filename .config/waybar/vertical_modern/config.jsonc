@@ -9,6 +9,7 @@
     "margin-left": 4,
     "margin-right": 0,
     "fixed-center": true,
+    "reload_style_on_change": true,
 
     // ===================================================================
     // MODULE LAYOUT

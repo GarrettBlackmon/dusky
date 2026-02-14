@@ -39,6 +39,21 @@ tooltip label {
     padding: 4px;
 }
 
+/* Calendar tooltip hover fix - allows hovering over calendar without it disappearing */
+tooltip.background {
+    background-color: @surface_container_high;
+}
+
+calendar {
+    padding: 4px;
+}
+
+calendar:selected {
+    background-color: @primary;
+    color: @on_primary;
+    border-radius: 4px;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    MAIN BAR SECTIONS
    ═══════════════════════════════════════════════════════════════════════════ */

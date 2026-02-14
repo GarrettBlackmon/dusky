@@ -5,9 +5,11 @@ PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/wayvnc 0.0.0.0 5900 --max-fps=30 --output=DP-4
-Restart=always
-RestartSec=3s
+ExecStart=/home/garrett/user_scripts/networking/vnc-wrapper.sh
+Restart=on-failure
+RestartSec=10s
+# Prevent restart if display doesn't exist (clean exit)
+RestartPreventExitStatus=0
 
 [Install]
 WantedBy=graphical-session.target
